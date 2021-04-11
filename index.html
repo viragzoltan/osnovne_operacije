@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program za izračunavanje osnovnih aritmetičkih operacija</title>
+    
+</head>
+<body>
+    
+         <script>
+
+
+
+            do {numberA = prompt("Upišite prvi broj:");
+                numberA = parseInt(numberA)
+                var x = numberA >= 0 || numberA <= 0;
+                } while(!x);
+             
+            do {var operacija = prompt("Upišite aritmetičku operaciju +, -, * ili /");
+                var z = operacija == "+" || operacija == "-" || operacija == "*" || operacija == "/";
+                } while(!z);
+             
+
+            do {numberB = prompt("Upišite drugi broj:");
+                numberB = parseInt(numberB)
+                var y = numberB >= 0 || numberB <= 0;
+                } while(!y);
+
+               
+                switch (operacija) {
+                case "+":
+                    var rezultat = numberA + numberB;
+                    alert(numberA + " " + operacija + " " + numberB +" = " + rezultat);
+                    break;
+                case "-":
+                    var rezultat = numberA - numberB;
+                    alert(numberA + " " + operacija + " " + numberB +" = " + rezultat);
+                    break;
+                case "*":
+                    var rezultat = numberA * numberB;
+                    alert(numberA + " " + operacija + " " + numberB +" = " + rezultat);
+                    break;
+                case "/":
+                    var rezultat = numberA / numberB;
+                    alert(numberA + " " + operacija + " " + numberB +" = " + rezultat);
+                    break;
+                default:
+                    alert("greška je bila u ukucanim podacima");
+                
+                }
+
+
+         </script>
+
+</body>
+</html>
